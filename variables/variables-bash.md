@@ -10,14 +10,14 @@ Variables are necessary for the storage or modification of data.
 
 ## Declare a variable
 
-Let's review some things to remember about variables before declare them.
+Let's review some things to remember about variables before declaring them.
 
-- A variable is case sensitive.
+- A variable is case-sensitive.
   
-  Which implies that tempvar and TempVar will be considered different variables.
+  for eg: it implies that tempvar and TempVar will be considered different variables.
 - Variable names can have letters, numbers, underscores, and digits.
 - Try to use relevant and meaningful names for your variables.
-- Whenever creating a variable or modify its value, the $ symbol is not necessary, just the actual name of the variable is enough.
+- Whenever creating a variable or modifying its value, the $ symbol is not necessary, just the actual name of the variable is enough.
 
 - Avoid using names such as reserved bash keywords.
 - Between the variable name and value, there should not be a space.
@@ -45,9 +45,9 @@ There are two ways to access the bash variables :
 - $ variable_name
 - $ {variable_name}
 
-First method is $ symbol followed by the variable name.
+The first method is the $ symbol followed by the variable name.
 
-Second method is $ symbol followed by the curly braces {} and with in itself variable name.
+The second method is the $ symbol followed by the curly braces {} and within itself the variable name.
 
 
 ```
@@ -68,7 +68,7 @@ My jersey number is 7
 
 ```
 
-### Modify value of the variable
+### Modify the value of the variable
 
 Re-assign any value to the variable again.
 
@@ -81,7 +81,7 @@ Output
 My jersey number is 7
 
 ```
-In the above code , let's change jersey_number to 11.
+In the above code, let's change jersey_number to 11.
 ```
 jersey_number=11 
 echo My jersey number is ${jersey_number}
@@ -96,9 +96,9 @@ My jersey number is 11
 Bash doesn't have explicit data types, so to be aware of the variable data types we can 
 use the declare command.
 
-The declare command can be used create a variable with a specific data type or check the type of variable.
+The declare command can be used to create a variable with a specific data type or check the type of variable.
 
-E.g: if we want to create a variable with int data type,  then use the declare command with the -i flag.
+Example: if we want to create a variable with int data type,  then use the declare command with the -i flag.
 
 ```
 declare -i jersey_number
@@ -125,11 +125,13 @@ syntax error: invalid arithmetic operator (error token is ".14")
 ```
 ## Environmental variables
 
-The built in variables are termed as environmental variables,
-these are part of the environment and are accessible to processes:
+The built-in variables are termed environmental variables,
+these are part of the environment and are accessible to processes.
 
-- SHELL  - specifies the user's default shell (Example : /bin/bash)
-- PWD    - represents the current working directory (Example : /root)
+Let's see some of the common Environmental variables.
+
+- SHELL  - specifies the user's default shell (Example: /bin/bash)
+- PWD    - represents the current working directory (Example: /root)
 - PATH   - to view the current directory which is searched for executable programs
 - USER   - indicates the current username
 - LOGNAME  - indicates the current username
