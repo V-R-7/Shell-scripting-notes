@@ -128,13 +128,104 @@ syntax error: invalid arithmetic operator (error token is ".14")
 The built-in variables are termed environmental variables,
 these are part of the environment and are accessible to processes.
 
+Note:
+The names of environment variables are always capitalized by convention, but this is not a rule.
+
+
 Let's see some of the common Environmental variables.
 
-- SHELL  - specifies the user's default shell (Example: /bin/bash)
-- PWD    - represents the current working directory (Example: /root)
-- PATH   - to view the current directory which is searched for executable programs
-- USER   - indicates the current username
-- LOGNAME  - indicates the current username
+- SHELL   - specifies the user's default shell (Example: /bin/bash)
+- PWD     - represents the current working directory (Example: /root)
+- PATH    - to view the current directory which is searched for executable programs
+- USER    - indicates the current username
+- LOGNAME - indicates the current username
+- LANG    - indicates the current Language/localization settings
+- HOME    - represents the user's home directory
+
+### Custom Environmental variables
+
+We can able to create our own environmental variables for use in scripts or other.
+
+```
+export MY_ENVIRONMENT_VARIABLE="sample"
+```
+Linux environment variables can be persistent across shell sessions in several ways.
+
+For Non Login Shells :
+
+To make it persistent across sessions, add the export statement to your shell configuration file,
+example : In directory ~/.bashrc or ~bash_profile you can add the below code.
+
+```
+# Add the below lines to ~/.bashrc or ~bash_profile
+export MY_ENVIRONMENT_VARIABLE="sample"
+```
+Once these changes are added to the shell configuration file, it will be available across new terminal window / new shell session.
+
+For Login Shells:
+
+Same as Non login interactive shells, but make sure to add the lines in ~/.profile instead of ~/.bashrc or ~bash_profile.
+
+```
+# Add the below lines to ~/.profile
+export MY_ENVIRONMENT_VARIABLE="sample"
+```
+
+For System wide:
+
+This will be applicable if when we need environment variables to be accessible by all users.
+
+All global profile settings are located under the/etc/profile.
+
+Add the lines in ~/.etc/profile
+```
+# Add the below lines to  ~/.etc/profile
+export MY_ENVIRONMENT_VARIABLE="sample"
+```
+## View Environment variables
+
+To view the environment variables available, we can use the command,
+```
+printenv
+```
+This command will display the key & values respectively of all environment variables set currently in the shell session.
+
+To display a specific environment variable's value, we can use the below command.
+
+```
+printenv MY_ENVIRONMENT_VARIABLE
+```
+The output it will print as sample.
+
+Meanwhile there are other commands available to display environment variables as well.
+
+## Unset Environment Variables
+
+To unset an environment variable, we can use the unset command:
+
+```
+unset MY_ENVIRONMENT_VARIABLE
+```
+
+To confirm we can use the below command,
+
+```
+printenv MY_ENVIRONMENT_VARIABLE
+```
+Now it will display no output.
+
+However to prevent this environment variable in future session we can comment / remove the code from the directory we set it.
+
+```
+# export MY_ENVIRONMENT_VARIABLE="sample"
+```
+or 
+
+to permanently unset a variable ,go to the file and remove the entry.
+
+
+
+
 
 
 
