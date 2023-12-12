@@ -4,6 +4,8 @@ It provides a predictable location for files across distributions.
 
 The hierarchical structure of the linux file system is below,
 
+![Screenshot from 2023-12-12 19-18-55](https://github.com/V-R-7/Shell-Scripting/assets/62888693/df7b8dd1-48f3-4887-84d7-98035eb89ea3)
+
 -  / Root Directory : The top level directory which serves as the root of the file system hierarchy.
 -  /bin   : Essential user binaries 
 -  /boot  : Boot loader files 
@@ -25,3 +27,5 @@ The hierarchical structure of the linux file system is below,
 -  /tmp   : consists of Temporary files
 -  /usr   : Another hierarchy for system and user binaries
 -  /var   : Consists of file that can vary i.e, contains things like logs & etc
+
+
