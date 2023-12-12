@@ -4,7 +4,8 @@ It provides a predictable location for files across distributions.
 
 The hierarchical structure of the linux file system is below,
 
-![Screenshot from 2023-12-12 19-18-55](https://github.com/V-R-7/Shell-Scripting/assets/62888693/df7b8dd1-48f3-4887-84d7-98035eb89ea3)
+![Screenshot from 2023-12-12 19-18-55](https://github.com/V-R-7/Shell-Scripting/assets/62888693/8fca9284-7fa2-461c-9455-5caa95865ae1)
+
 
 -  / Root Directory : The top level directory which serves as the root of the file system hierarchy.
 -  /bin   : Essential user binaries 
