@@ -7,7 +7,7 @@ The hierarchical structure of the linux file system is below,
 ![Screenshot from 2023-12-12 19-18-55](https://github.com/V-R-7/Shell-Scripting/assets/62888693/8fca9284-7fa2-461c-9455-5caa95865ae1)
 
 
--  / Root Directory : The top level directory which serves as the root of the file system hierarchy.
+-  / : The top level directory - Root Directory which serves as the root of the file system hierarchy.
 -  /bin   : Essential user binaries 
 -  /boot  : Boot loader files 
 -  /dev   : Consists of device files 
