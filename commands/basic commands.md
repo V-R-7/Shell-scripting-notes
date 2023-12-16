@@ -55,6 +55,29 @@ There are some of mostly used bash commands below,
 | wget | Download files from the internet |
 | curl | transfer data to or from a server, using any of the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP, or FILE) |
 
+## Working with file permissions
+
+To change/modify file permissions to 'execute' for all users:
+
+```
+chmod  +x  my_custom_script.sh
+
+```
+To change/modify file permissions to 'execute' only for you, the current user:
+
+```
+chmod u+x sample_file.txt
+
+```
+To remove 'read' permissions from group and other users:
+
+```
+chmod go-r
+
+```
+
+
+
 
 
 
