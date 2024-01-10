@@ -40,4 +40,4 @@ Now, with the options
 -  -f (field)       : Select specific fields (columns) from each line of a file. ( cut uses tab as a default field delimiter & Space is not considered as delimiter in UNIX)
 -  –-complement     : Complement the set of selected bytes, characters, or fields (this option can be used in the combination with other options either with -f or with -c.)
                     --complement option negates the selection, meaning it selects everything that is not specified in the field or byte list.
-- –output-delimiter : To specify the delimiter character to be used when printing the output
+- --output-delimiter : To specify the delimiter character to be used when printing the output.
