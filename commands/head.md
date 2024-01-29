@@ -19,7 +19,7 @@ Common options include:
 
 ## Example:
 
-i) To display first 10 lines of a file named example.txt
+i) To display first 10 lines of a file named example.txt:
 
 ```
 head example.txt
