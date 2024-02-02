@@ -20,10 +20,10 @@ Note : If set2 is not provided, tr will only perform deletion or squeezing chara
 
 Some common options include:
 
--d: Delete characters in set1.
--s: Squeeze repeating characters in set1 to single characters.
--c: Complement set1 (replace characters not in set1).
--t: Translate using set1 and set2 strings of different lengths.
+- -d: Delete characters in set1.
+- -s: Squeeze repeating characters in set1 to single characters.
+- -c: Complement set1 (replace characters not in set1).
+- -t: Translate using set1 and set2 strings of different lengths.
 
 Examples:
 
