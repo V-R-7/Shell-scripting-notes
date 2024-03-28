@@ -10,6 +10,17 @@ For more complex tasks, sed can handle multiple lines, perform global replacemen
 
 It’s a powerful tool for scripting and data manipulation in Unix-like environments.
 
+Syntax:
+
+```
+
+sed [OPTIONS] 'COMMAND' [FILE...]
+
+```
+- OPTIONS - Modify how sed operates. Common options include -i for editing files in place and -e to add multiple commands.
+- COMMAND - The sed command to execute, such as s for substitution.
+- FILE… - One or more files to process with sed. If no file is specified, sed reads from the standard input.
+
 Examples:
 
 A basic example of using sed to replace the first occurrence of “unix” with “linux” in a file:
